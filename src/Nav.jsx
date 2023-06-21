@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './App.css';
 
-const Nav = ({ search, setSearch }) => {
+const Nav = () => {
+
+  const [search, setSearch] = useState('');
 
     return (
       <nav className='Nav'>  

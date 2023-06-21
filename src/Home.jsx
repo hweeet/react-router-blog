@@ -1,8 +1,10 @@
 import React from "react";
 import './App.css';
 import Feed from "./Feed";
+import posts from "./posts";
 
-const Home = ({ posts }) => {
+const Home = () => {
+
     return (
       <main className='Home'>  
         {posts.length ? (

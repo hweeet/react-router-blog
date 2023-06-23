@@ -5,17 +5,15 @@ import Footer from "./Footer";
 import { Outlet } from 'react-router-dom';
 import './App.css' ;
 
-const Root = () => { 
+const Root = ({ search, setSearch }) => { 
 
     return (
-        <>
+        <div className='App'>
             <Header title="React JS Blog"/>
-            <Nav />
-            <main>
-                <Outlet />
-            </main>
+            <Nav search={search} setSearch={setSearch}/>
+            <Outlet />
             <Footer/>
-        </>
+        </div>
     )
 };
 

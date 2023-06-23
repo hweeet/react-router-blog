@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './App.css';
 
-const Nav = () => {
-
-  const [search, setSearch] = useState('');
+const Nav = ({ search, setSearch }) => {
 
     return (
       <nav className='Nav'>  
